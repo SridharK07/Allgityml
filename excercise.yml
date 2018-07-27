@@ -1,0 +1,13 @@
+---
+
+- hosts: machine2
+  become: yes
+  tasks:
+    - name: Create user
+      user: name=excuser group=sudo state=present
+#    - name: cronjob
+#     minitue: 5 job='loger hello' state=present user=excuser
+    
+      
+
+			

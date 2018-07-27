@@ -1,0 +1,12 @@
+---
+
+
+- hosts: machine2
+  vars_files:
+    - file1.yml
+    - file2.yml
+  tasks:
+    - name: one
+      shell: echo '{{ var1 }}' >/home/ansible/vault1.txt
+    - name: two
+      shell: echo helo '{{ var2 }}' >/home/ansible/vault2.txt	

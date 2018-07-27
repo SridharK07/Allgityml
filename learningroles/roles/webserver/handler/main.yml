@@ -1,0 +1,4 @@
+---
+
+ - name: httpdservice
+   service: name=httpd state=started enable=yes 
